@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    background-color: black;
+    color: #00FF00;
+}
+
+.terminals{
+    margin: 10px;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.blinking-dots::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    text-align: left;
+    animation: blink 1s steps(3, end) infinite;
+}
+
+@keyframes blink {
+    0% { content: '.'; }
+    33% { content: '..'; }
+    66% { content: '...'; }
+    100% { content: '.'; }
+}
+
+  
